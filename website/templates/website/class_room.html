@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students List</title>
+</head>
+<body>
+
+
+{% for room in classes %}
+{{ room.name }} -> {% for student in room.students.all %} {{ student.first_name }} {% endfor %} <br>
+{% endfor %}
+
+</body>
+</html>

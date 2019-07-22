@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from website.models import Student
+from website.models import Student, ClassRoom
 
 
 class StudentAdmin(admin.ModelAdmin):
@@ -8,3 +8,4 @@ class StudentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Student, StudentAdmin)
+admin.site.register(ClassRoom)
